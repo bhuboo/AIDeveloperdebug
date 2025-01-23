@@ -16,6 +16,7 @@ function AppRoutes() {
             <Route path="/register" element={<Register/>} />
             {/* <Route path="/project" element={<Project/>} /> */}
             <Route path="/project" element={<UserAuth><Project/></UserAuth>} />
+            <Route path="*" element={<UserAuth><Project/></UserAuth>} />
         </Routes>
         </BrowserRouter>
   )
