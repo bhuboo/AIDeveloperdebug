@@ -11,10 +11,10 @@ const UserAuth = ({ children }) => {
         const token = localStorage.getItem("token");
 
         if (!token) {
-          
+          console.log(token,"token +-------------------------------+ sbsbvsjhvbsjkb")
             navigate('/login');
         } else if (!user) {
-          
+            console.log(user,"user +-------------------------------+ sbsbvsjhvbsjkb")
             const storedUser = localStorage.getItem("user");
             if (storedUser) {
                 setUser(JSON.parse(storedUser));
@@ -22,7 +22,7 @@ const UserAuth = ({ children }) => {
                 navigate('/login'); 
             }
         }
-
+        console.log(token,user,"none +-------------------------------+ sbsbvsjhvbsjkb")
         setLoading(false);
     }, [user, setUser, navigate]);
 
