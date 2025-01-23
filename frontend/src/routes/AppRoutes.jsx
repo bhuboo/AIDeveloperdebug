@@ -11,12 +11,12 @@ function AppRoutes() {
         <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
         <Routes>
             {/* <Route path="/" element={ <Home/> } /> */}
-            <Route path="/" Component={ <UserAuth><Home/></UserAuth> } />
-            <Route path="/login" Component={<Login/>} />
-            <Route path="/register" Component={<Register/>} />
+            <Route path="/" element={ <UserAuth><Home/></UserAuth> } />
+            <Route path="/login" element={<Login/>} />
+            <Route path="/register" element={<Register/>} />
             {/* <Route path="/project" element={<Project/>} /> */}
-            <Route path="/project" Component={<UserAuth><Project/></UserAuth>} />
-            <Route path="*" Component={<UserAuth><Project/></UserAuth>} />
+            <Route path="/project" element={<UserAuth><Project/></UserAuth>} />
+            <Route path="*" element={<Login/>} />
         </Routes>
         </BrowserRouter>
   )
