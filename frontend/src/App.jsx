@@ -1,7 +1,7 @@
 import "./index.css";
 import AppRoutes from "./routes/AppRoutes";
 import UserProvider from "./context/UserContext";
-import { StrictMode } from "react";
+import { StrictMode, Suspense } from "react";
 import { BrowserRouter } from "react-router-dom";
 
 function App() {  
