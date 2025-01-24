@@ -12,11 +12,13 @@ function App() {
   // </UserProvider>
   //   </StrictMode>
 <StrictMode>
+<UserProvider>
   <BrowserRouter>
   <Suspense>
     <AppRoutes/>
   </Suspense>
   </BrowserRouter>
+  </UserProvider>
 </StrictMode>
   );
 }
